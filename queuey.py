@@ -16,7 +16,7 @@ class Queuey:
         if not isinstance(item, self.data_type):
             raise TypeError(f"Wrong type of item was provided. Your item needs to be a {self.data_type.__name__}")
         self.q.append(item)
-        self.size + 1
+        self.size += 1
 
     def dequeue(self):
         """ Removes the next item in the queue and returns it """
